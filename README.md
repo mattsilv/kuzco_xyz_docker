@@ -24,9 +24,9 @@ This script is designed to run Docker **NVIDIA** workers for [kuzco.xyz](https:/
 #### Example
 
 To run 3 containers with a specific worker ID and code:
-    ```bash
-    ./kuzco_nvidia.sh 3 "your_worker_id" "your_code"
-    ```
+```bash
+./kuzco_nvidia.sh 3 "your_worker_id" "your_code"
+```
 
 ### Setting Up a Cron Job
 
