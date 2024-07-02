@@ -41,7 +41,7 @@ num_gpus=${#gpu_array[@]}
 for i in $(seq 1 $NUM_CONTAINERS); do
     gpu_index=$(( (i - 1) % num_gpus ))
     start_container "${IMAGE_NAME//[:\/]/_}_$i" "${gpu_array[$gpu_index]}"
-    sleep 5
+    sleep 30
 done
 
 echo "$NUM_CONTAINERS containers started with image $IMAGE_NAME using worker $WORKER and code $CODE."
